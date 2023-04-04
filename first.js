@@ -1,17 +1,3 @@
-function fectchData(url){
-    
-    fetch(url).then((response) => {
-        response.json().then(res => {
-            console.log(res)
-            renderData(res)
-        })
-        
-    }).catch((error) => console.error(error))
-}
-
-function home(){
-    fectchData('http://localhost:3000/characters')
-}
 const form = document.getElementById("myForm");
 form.addEventListener("submit", handleSubmit);function handleSubmit(event) {
   event.preventDefault(); // Prevent default form submission behavior  // Get form values
@@ -21,5 +7,4 @@ form.addEventListener("submit", handleSubmit);function handleSubmit(event) {
   console.log(name, email, message);  // Reset the form after submission
   form.reset();
 }
-New
-2:06
+
