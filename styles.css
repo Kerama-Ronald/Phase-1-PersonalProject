@@ -1,16 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
   
-
+}
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
     overflow: hidden;
- padding: 0;
+    padding-left: 20px;
  margin: 0;
+ margin-bottom: 20px;
+ border-bottom: 1px solid #eae7e7;
+ display: flex;
+ gap: 5rem;
+}
+
+.logo-c{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.logo{
+  height: 60px;
+  border-radius: 30px;
+}
+
+header{
+  height: 70px;
 }
   
   /* Style the links inside the navigation bar */
+  .topnav-links{
+    display: flex;
+  }
   .topnav a {
-    float: left;
     color: HEX
     #17202A 
    RGB
@@ -34,11 +56,25 @@
    background-color: #0a126c;
     color: white;
   }
-    
-    .container {
-        margin-top: 50px;
-      }
-      
+
+  .main{
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+     background-color: #0a126c;
+  }
+
+  .row{
+    margin-top: 20px;
+   
+  }
+
+  .main-title{
+    font-size: large;
+    text-align: center;
+  }
+  
       .flip-card {
         background-color: transparent;
         width: 100%;
@@ -68,8 +104,15 @@
       }
       
       .flip-card-front {
-        background-color: #bbb;
         color: black;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .flip-card-front img{
+        height: 280px !important;
+        width: 100% !important;
+        border-radius: 4px;
       }
       
       .flip-card-back {
@@ -101,7 +144,7 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+  /*
   .container img {
     width: calc((100% / 3) - 10px);
     height: auto;
@@ -110,6 +153,7 @@
     box-sizing: border-box;
     border: 5px solid white;
   }
+  */
   * {box-sizing: border-box;}
   body {font-family: Verdana, sans-serif;}
   .mySlides {display: none;}
