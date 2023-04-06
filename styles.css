@@ -3,6 +3,8 @@ body{
   padding: 0;
   
 }
+
+
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
@@ -12,6 +14,7 @@ body{
  border-bottom: 1px solid #eae7e7;
  display: flex;
  gap: 5rem;
+background-color: yellow;
 }
 
 .logo-c{
@@ -41,22 +44,78 @@ header{
     210, 29%, 13%;
     text-align: center;
     padding: 20px 25px;
-    text-decoration: none;
-    font-size: 20px;
+    text-decoration: black;
+    font-size: 25px;
+  font-weight: 300;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #e6f119;
     color: black;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-   background-color: #0a126c;
-    color: white;
+   background-color: yellow;
+    color: black;
   }
-
+  * {
+    box-sizing: border-box;
+  }
+  
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
   .main{
     width: 95%;
     padding-top: 20px;
@@ -232,3 +291,90 @@ header{
     display: table;
     clear: both;
   }
+  /* form styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* form section styles */
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.half {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.full {
+  margin-bottom: 20px;
+}
+
+.item {
+  flex-basis: 48%;
+}
+
+/* form input styles */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: yellow;
+}
+
+/* form validation styles */
+input:required,
+textarea:required {
+  border-color: blue;
+}
+
+input:required:focus,
+textarea:required:focus {
+  outline: none;
+  border-color: #4d90fe;
+}
+
+input:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
