@@ -78,7 +78,18 @@ function showSlides(n) {
   slides[slideIndex-1].style
 }
 
-   // get form elements
+const likeBtn = document.getElementById('like-btn');
+const unlikeBtn = document.getElementById('unlike-btn');
+
+likeBtn.addEventListener('click', () => {
+  likeBtn.classList.toggle('clicked');
+});
+
+unlikeBtn.addEventListener('click', () => {
+  unlikeBtn.classList.toggle('clicked');
+});
+
+// get form elements
 const form = document.querySelector("form");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
@@ -109,3 +120,4 @@ form.addEventListener("reset", function(event) {
   emailInput.setCustomValidity("");
   messageInput.setCustomValidity("");
 });
+
