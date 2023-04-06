@@ -78,17 +78,7 @@ function showSlides(n) {
   slides[slideIndex-1].style
 }
 
-const likeBtn = document.getElementById('like-btn');
-const unlikeBtn = document.getElementById('unlike-btn');
-
-likeBtn.addEventListener('click', () => {
-  likeBtn.classList.toggle('clicked');
-});
-
-unlikeBtn.addEventListener('click', () => {
-  unlikeBtn.classList.toggle('clicked');
-});
-
+   
 // get form elements
 const form = document.querySelector("form");
 const nameInput = document.getElementById("name");
