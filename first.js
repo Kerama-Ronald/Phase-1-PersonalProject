@@ -1,3 +1,58 @@
+// Fetch the data from db.json
+fetch('db.json')
+  .then(response => response.json())
+  .then(data => {
+    // Get the cryptocurrencies array
+    const cryptocurrencies = data.cryptoCurrencies;
+
+    // Get the slideshow element from the HTML
+    const slideshow = document.getElementById('slideshow');
+
+    // Loop through the cryptocurrencies array
+    cryptocurrencies.forEach(crypto => {
+      // Create a slide element for each cryptocurrency
+      const slide = document.createElement('div');
+      slide.classList.add('slide');
+
+      // Create an image element for the cryptocurrency
+      const image = document.createElement('img');
+      image.src = crypto.image;
+      image.alt = crypto.name;
+
+      // Create a heading element for the cryptocurrency name
+      const heading = document.createElement('h2');
+      heading.textContent = crypto.name;
+
+      // Add the image and heading elements to the slide element
+      slide.appendChild(image);
+      slide.appendChild(heading);
+
+      // Add the slide element to the slideshow
+      slideshow.appendChild(slide);
+    });
+
+    // Set the first slide to active
+    const slides = document.querySelectorAll('.slide');
+    slides[0].classList.add('active');
+
+    // Start the slideshow timer
+    let slideIndex = 0;
+    setInterval(() => {
+      // Remove the active class from the current slide
+      slides[slideIndex].classList.remove('active');
+
+      // Increment the slide index
+      slideIndex++;
+
+      // If the slide index is greater than the number of slides, reset it to 0
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+
+      // Add the active class to the next slide
+      slides[slideIndex].classList.add('active');
+    }, 3000);
+  });
 
 
    // get form elements
