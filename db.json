@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Bitcoin",
-      "image": "https://www.coindesk.com/resizer/zV6XeAoD0Ei-izfU0hRMZTTiDWw=/567x425/filters:quality(80):format(jpg)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/F6EMOEK6UVARNFJRX34ZJSKOCM",
+      "image": "",
       "description": "Bitcoin is a decentralized digital currency that enables instant payments to anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network.",
       "yearEstablished": 2009,
       "founders": ["Satoshi Nakamoto"]
