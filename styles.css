@@ -644,3 +644,22 @@ footer span{
 .review-message {
   font-size: 15px;
 }
+.thumb {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+#thumbs-up {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1107/1107585.png');
+}
+
+#thumbs-down {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1107/1107584.png');
+}
+
+.thumb.active {
+  filter: invert(1);
+}

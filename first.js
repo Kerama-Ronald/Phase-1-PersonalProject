@@ -83,7 +83,7 @@ response.forEach((crypto, index) => {
     numOfSlides = slides.length - 1;
     const nextSlide = document.querySelector(".next");
 
-    setInterval(slideTimer, 5000)
+    setInterval(slideTimer, 2000)
     // add event listener and navigation functionality
     nextSlide.addEventListener("click", function () {
       // check if current slide is the last and reset current slide
@@ -200,3 +200,8 @@ function slideTimer(){
   }
   setSlide();
 }
+$(document).ready(function() {
+  $('.thumb').click(function() {
+    $(this).toggleClass('active');
+  });
+});
