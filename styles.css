@@ -80,12 +80,8 @@ header{
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
 
-/* Next and previous buttons */
+/* Next and previous buttons 
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -101,17 +97,15 @@ header{
   user-select: none;
 }
 
-/* Position the next button */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
+*/
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -130,6 +124,7 @@ header{
   to {opacity: 1}
 }
 
+/*
   .prev,
   .next {
     position: absolute;
@@ -154,23 +149,19 @@ header{
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+  */
   
   .text {
-    color: #f2f2f2;
-    font-size: 15px;
+    color: white;
+    font-size: 24px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 30px;
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
   }
-  
-  
-  
-  
-  
-  
-  
   
   .main{
     width: 95%;
@@ -193,7 +184,6 @@ header{
       .flip-card {
         background-color: transparent;
         width: 100%;
-        height: 400px;
         perspective: 1000px;
       }
       
@@ -271,7 +261,6 @@ header{
   */
   * {box-sizing: border-box;}
   body {font-family: Verdana, sans-serif;}
-  .mySlides {display: none;}
   img {vertical-align: middle;}
   
   /* Slideshow container */
@@ -281,16 +270,6 @@ header{
     margin: auto;
   }
   
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 0;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
   
   /* Number text (1/3 etc) */
   .numbertext {
@@ -302,15 +281,6 @@ header{
   }
   
   /* The dots/bullets/indicators */
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #14213d;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
   
   .active {
     background-color: #14213d;
@@ -423,11 +393,11 @@ textarea {
     width: 100%;
    }/* Hide the images by default */
   .mySlides {
-    display: none;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }/* Next & previous buttons */
+  /*
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -441,24 +411,15 @@ textarea {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }/* Position the "next button" to the right */
+  }
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }/* On hover, add a black background color with a little bit see-through */
+  }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }/* Caption text */
-  .text {
-    color: #F2F2F2
-  ;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }/* Number text (1/3 etc) */
+
   .numbertext {
     color: #F2F2F2
   ;
@@ -471,13 +432,14 @@ textarea {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
+    margin: 0 4px;
+    background-color: rgb(139, 136, 136);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }.active, .dot:hover {
-    background-color: #717171
+  }
+  .dot.active, .dot:hover {
+    background-color: white
   ;
   }/* Fading animation */
   .fade {
@@ -540,4 +502,145 @@ footer {
 }
 footer span{
   font-size: 12px;
+}
+
+.slider-grid {
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.slide {
+  width: 100%;
+  max-width: 900px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.prev,
+.next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  z-index: 15;
+}
+
+.prev:active,
+.next:active {
+  transform: scale(1.1);
+}
+
+.prev {
+  top: 45%;
+  left: 2%;
+}
+
+.next {
+  top: 45%;
+  right: 2%;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 15;
+}
+
+.socials{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.review-cards {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  gap: 3%;
+}
+
+.review-card {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  gap: 10px;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.review-delete{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  z-index: 100;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.review-delete:hover{
+  fill: rgb(228, 27, 27);
+  transition: fill ease-in 0.3s;
+}
+.review-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.review-card p {
+  margin: 0;
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.review-name {
+  font-weight: 700;
+}
+
+.review-message {
+  font-size: 15px;
 }
