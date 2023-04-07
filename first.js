@@ -200,8 +200,3 @@ function slideTimer(){
   }
   setSlide();
 }
-$(document).ready(function() {
-  $('.thumb').click(function() {
-    $(this).toggleClass('active');
-  });
-});
