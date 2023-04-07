@@ -6,8 +6,8 @@ window.addEventListener('DOMContentLoaded', async () => {
   const slider = document.getElementById('slides');
   const dotContainer = document.getElementById("the-dots");
 
-const response = await (await fetch('http://localhost:3000/cryptoCurrencies', {method: 'GET'})).json()
-const reviews = await (await fetch('http://localhost:3000/reviews', {method: 'GET'})).json()
+const response = await (await fetch('https://my-json-server.typicode.com/Kerama-Ronald/Phase-1-PersonalProject/cryptoCurrencies', {method: 'GET'})).json()
+const reviews = await (await fetch('https://my-json-server.typicode.com/Kerama-Ronald/Phase-1-PersonalProject/reviews', {method: 'GET'})).json()
 
 response.forEach((crypto, index) => {
     let slide = `
@@ -121,7 +121,7 @@ const reviewDel = document.querySelectorAll(".review-delete");
 reviewDel.forEach((card) => {
   card.addEventListener('click', async() => {
     currentCard = card.getAttribute('data-card');
-    let del = await fetch(`http://localhost:3000/reviews/${currentCard}`, {
+    let del = await fetch(`https://my-json-server.typicode.com/Kerama-Ronald/Phase-1-PersonalProject/reviews/${currentCard}`, {
       method: 'DELETE',
       headers: {
         "Content-Type": "application/json",
@@ -154,7 +154,7 @@ form.addEventListener("submit", async (event) => {
       "message": messageInput.value
     }
   
-    let upload = await fetch("http://localhost:3000/reviews", {
+    let upload = await fetch("https://my-json-server.typicode.com/Kerama-Ronald/Phase-1-PersonalProject/reviews", {
       method: 'POST',
       body: JSON.stringify(review),
       headers: {
