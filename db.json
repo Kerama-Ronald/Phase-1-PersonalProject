@@ -61,6 +61,12 @@
       "name": "Forex",
       "image": "Images/forex.jpg",
       "description":"Forex, or foreign exchange"
+    },
+    {
+      "id": 9,
+      "name": "Solana",
+      "image": "Images/Solana.jpeg",
+      "description":"Solana is a blockchain platform that was created in 2020 by Solana Labs and the Solana Foundation. The Solana blockchain has been subject to several outages, and Solana companies: have been subject to a class-action lawsuit regarding the sale of unregistered securities."
     }
   ]
 }

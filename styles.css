@@ -1,3 +1,7 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   padding: 0;
@@ -7,14 +11,13 @@ body{
 
 /* Add a black background color to the top navigation */
 .topnav {
-    overflow: hidden;
-    padding-left: 20px;
- margin: 0;
- margin-bottom: 20px;
- border-bottom: 1px solid #eae7e7;
- display: flex;
- gap: 5rem;
-background-color: yellow;
+  overflow: hidden;
+  padding-left: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eae7e7;
+  display: flex;
+  gap: 5rem;
 }
 
 .logo-c{
@@ -347,6 +350,7 @@ header{
   /* form styles */
 form {
   max-width: 600px;
+  padding: 3px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
 }
@@ -393,7 +397,11 @@ textarea {
   height: 150px;
 }
 .Kim{
-  background-color: #4d90fe;}
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;  
+  border-radius: 5px;
+}
    .btn {
     background-color: white;
     border: 1px solid black;
@@ -481,30 +489,33 @@ textarea {
   }
 input[type="submit"],
 input[type="reset"] {
-  background-color: #2980b9;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 3px;
   cursor: pointer;
   margin-right: 10px;
+  background-color: #1D4ED8;	
+  border-radius: 8px;
+  transition: background-color ease-in .1s;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background-color: yellow;
+  background-color: #1E40AF;	
 }
 
 /* form validation styles */
 input:required,
 textarea:required {
-  border-color: blue;
+  border: 0;
+  outline: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 input:required:focus,
 textarea:required:focus {
-  outline: none;
-  border-color: #4d90fe;
+  outline: 2px solid #1D4ED8;
+  transition: outline ease-in .2s;
 }
 
 input:invalid,
@@ -516,4 +527,17 @@ input[type="submit"]:disabled,
 input[type="reset"]:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+footer span{
+  font-size: 12px;
 }

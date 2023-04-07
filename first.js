@@ -28,18 +28,18 @@ fetch('db.json')
       slide.appendChild(heading);
 
       // Add the slide element to the slideshow
-      slideshow.appendChild(slide);
+    //  slideshow.appendChild(slide);
     });
 
     // Set the first slide to active
     const slides = document.querySelectorAll('.slide');
-    slides[0].classList.add('active');
+  //  slides[0].classList.add('active');
 
     // Start the slideshow timer
     let slideIndex = 0;
     setInterval(() => {
       // Remove the active class from the current slide
-      slides[slideIndex].classList.remove('active');
+    //  slides[slideIndex].classList.remove('active');
 
       // Increment the slide index
       slideIndex++;
@@ -50,7 +50,7 @@ fetch('db.json')
       }
 
       // Add the active class to the next slide
-      slides[slideIndex].classList.add('active');
+     // slides[slideIndex].classList.add('active');
     }, 3000);
   });
 // Set the index of the current slide
@@ -111,3 +111,29 @@ form.addEventListener("reset", function(event) {
   messageInput.setCustomValidity("");
 });
 
+window.addEventListener('DOMContentLoaded', async () => {
+  const flipCards = document.getElementById('flip-cards');
+
+  
+const response = await (await fetch('http://localhost:3000/cryptoCurrencies', {method: 'GET'})).json()
+console.log(response);
+response.forEach((crypto) => {
+    console.log(crypto)
+    let card = `
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src=${crypto.image} alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>${crypto.name}</h1>
+
+        <p>${crypto.description}</p>
+      </div>
+    </div>
+  </div>
+    `
+    flipCards.innerHTML += card
+  })
+
+})
