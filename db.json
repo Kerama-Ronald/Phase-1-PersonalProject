@@ -6,7 +6,9 @@
       "image": "Images/Bitcoin.jpeg",
       "description": "Bitcoin is a decentralized digital currency that enables instant payments to anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network.",
       "yearEstablished": 2009,
-      "founders": ["Satoshi Nakamoto"]
+      "founders": [
+        "Satoshi Nakamoto"
+      ]
     },
     {
       "id": 2,
@@ -14,7 +16,9 @@
       "image": "Images/Binance.jpeg",
       "description": "Binance is a cryptocurrency exchange platform that provides trading services for more than 100 cryptocurrencies. It was founded in 2017 and is headquartered in Malta.",
       "yearEstablished": 2017,
-      "founders": ["Changpeng Zhao"]
+      "founders": [
+        "Changpeng Zhao"
+      ]
     },
     {
       "id": 3,
@@ -22,7 +26,10 @@
       "image": "Images/Dogecoin.jpeg",
       "description": "Dogecoin is a cryptocurrency that was created as a lighthearted alternative to Bitcoin. It was created by software engineers Billy Markus and Jackson Palmer in 2013.",
       "yearEstablished": 2013,
-      "founders": ["Billy Markus", "Jackson Palmer"]
+      "founders": [
+        "Billy Markus",
+        "Jackson Palmer"
+      ]
     },
     {
       "id": 4,
@@ -30,7 +37,9 @@
       "image": "Images/dai.avif",
       "description": "Dai is a stablecoin that is pegged to the value of the US dollar. It is issued by the MakerDAO platform, which is a decentralized organization that runs on the Ethereum blockchain.",
       "yearEstablished": 2017,
-      "founders": ["Rune Christensen"]
+      "founders": [
+        "Rune Christensen"
+      ]
     },
     {
       "id": 5,
@@ -38,7 +47,11 @@
       "image": "Images/ethereum.jpeg",
       "description": "Ethereum is a decentralized platform that enables developers to build and deploy decentralized applications (dapps) on its blockchain. It was created by Vitalik Buterin in 2013 and launched in 2015.",
       "yearEstablished": 2015,
-      "founders": ["Vitalik Buterin", "Gavin Wood", "Joseph Lubin"]
+      "founders": [
+        "Vitalik Buterin",
+        "Gavin Wood",
+        "Joseph Lubin"
+      ]
     },
     {
       "id": 6,
@@ -46,7 +59,9 @@
       "image": "Images/Wordcoin.png",
       "description": "WorldCoin is a cryptocurrency that aims to facilitate fast and secure transactions around the world. It was created in 2013 by an anonymous developer.",
       "yearEstablished": 2013,
-      "founders": ["Anonymous"]
+      "founders": [
+        "Anonymous"
+      ]
     },
     {
       "id": 7,
@@ -54,19 +69,35 @@
       "image": "Images/Litecoin.jpeg",
       "description": "Litecoin is a cryptocurrency that is based on the Bitcoin protocol, but with several key differences. It was created in 2011 by Charlie Lee.",
       "yearEstablished": 2011,
-      "founders": ["Charlie Lee"]
+      "founders": [
+        "Charlie Lee"
+      ]
     },
     {
       "id": 8,
       "name": "Forex",
       "image": "Images/forex.jpg",
-      "description":"Forex, or foreign exchange"
+      "description": "Forex, or foreign exchange"
     },
     {
       "id": 9,
       "name": "Solana",
       "image": "Images/Solana.jpeg",
-      "description":"Solana is a blockchain platform that was created in 2020 by Solana Labs and the Solana Foundation. The Solana blockchain has been subject to several outages, and Solana companies: have been subject to a class-action lawsuit regarding the sale of unregistered securities."
+      "description": "Solana is a blockchain platform that was created in 2020 by Solana Labs and the Solana Foundation. The Solana blockchain has been subject to several outages, and Solana companies: have been subject to a class-action lawsuit regarding the sale of unregistered securities."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "0",
+      "name": "kibet",
+      "email": "kmishmael@gmail.com",
+      "message": "someone said bitcoins, more loose you wealth coins."
+    },
+    {
+      "name": "kerama",
+      "email": "krma@outlook.com",
+      "message": "This is a test messsage.",
+      "id": "L62VVT2"
     }
   ]
 }
